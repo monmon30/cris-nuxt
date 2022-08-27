@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar :clipped-left="clipped">
+    <v-app-bar :clipped-left="clipped" app>
       <v-app-bar-nav-icon class="d-flex d-sm-none" @click="drawer = !drawer" />
 
       <div class="text-no-wrap">{{ $config.appName }}</div>
