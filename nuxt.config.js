@@ -69,7 +69,6 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   publicRuntimeConfig: {
-    sample: process.env.SAMPLE,
     appName: process.env.NUXT_ENV_APP_NAME
   },
   privateRuntimeConfig: {}
