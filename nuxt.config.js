@@ -70,7 +70,10 @@ export default {
   build: {},
   publicRuntimeConfig: {
     sample: process.env.SAMPLE,
-    appName: process.env.APP_NAME
+    appName: process.env.NUXT_ENV_APP_NAME
   },
   privateRuntimeConfig: {}
+  // env: {
+  //   appName: process.env.NUXT_ENV_APP_NAME
+  // }
 }
