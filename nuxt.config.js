@@ -38,13 +38,46 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next'
   ],
+  auth: {
+    redirect: {
+      login: '/auth/login',
+      home: '/dashboard',
+      logout: '/'
+    },
+    localStorage: {
+      prefix: 'Bearer'
+    },
+    strategies: {
+      local: {
+        token: {
+          property: 'access_token',
+          global: true
+        },
+        user: {
+          property: 'data'
+        },
+        endpoints: {
+          login: {
+            url: '/api/auth/login',
+            method: 'post'
+          },
+          logout: { url: '/api/auth/logout', method: 'post' },
+          user: {
+            url: '/api/auth/user',
+            method: 'get'
+          }
+        }
+      }
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/'
+    baseURL: process.env.NUXT_ENV_BASE_URL
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
@@ -71,8 +104,8 @@ export default {
   publicRuntimeConfig: {
     appName: process.env.NUXT_ENV_APP_NAME
   },
-  privateRuntimeConfig: {}
-  // env: {
-  //   appName: process.env.NUXT_ENV_APP_NAME
-  // }
+  privateRuntimeConfig: {
+    baseUrl: process.env.NUXT_ENV_BASE_URL
+  }
+  // nuxt/auth config
 }
