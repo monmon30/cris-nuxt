@@ -1,6 +1,6 @@
 <template>
   <v-card width="70%">
-    <v-card-title> Login Form </v-card-title>
+    <v-card-title> Login </v-card-title>
     <v-card-text>
       <v-form @submit.prevent="handleSubmit">
         <v-row no-gutters>
