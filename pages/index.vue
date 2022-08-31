@@ -19,9 +19,23 @@ import ProductList from '~/components/ProductList.vue'
 
 export default {
   name: 'IndexPage',
+
   components: {
     HeroBanner,
     ProductList
+  },
+
+  head({ $config }) {
+    return {
+      title: $config.appName,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: `${$config.appName} is a shop that sells Religious items in Philippines online! Try for yourself the quality of Religious items from our web store!`
+        }
+      ]
+    }
   },
   computed: {
     products() {
