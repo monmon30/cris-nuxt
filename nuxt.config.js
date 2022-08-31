@@ -106,5 +106,8 @@ export default {
   },
   privateRuntimeConfig: {
     baseUrl: process.env.NUXT_ENV_BASE_URL
+  },
+  image: {
+    domains: ['images.unsplash.com', 'tailwindui.com']
   }
 }
