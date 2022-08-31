@@ -1,7 +1,11 @@
 <template>
   <v-container>
     <v-row justify="center" align="center">
-      <ProductItem v-for="i in 13" :key="i" />
+      <ProductItem
+        v-for="(product, i) in products"
+        :key="i"
+        :product="product"
+      />
     </v-row>
   </v-container>
 </template>
@@ -13,6 +17,12 @@ export default {
   name: 'ProductList',
   components: {
     ProductItem
+  },
+  props: {
+    products: {
+      type: Array,
+      required: true
+    }
   }
 }
 </script>

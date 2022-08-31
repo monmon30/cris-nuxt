@@ -6,7 +6,7 @@
     <v-col>
       <v-row class="mx-md-16 mt-md-16">
         <v-col>
-          <ProductList />
+          <ProductList :products="products" />
         </v-col>
       </v-row>
     </v-col>
@@ -22,6 +22,11 @@ export default {
   components: {
     HeroBanner,
     ProductList
+  },
+  computed: {
+    products() {
+      return this.$store.getters['product/getProducts']
+    }
   }
 }
 </script>

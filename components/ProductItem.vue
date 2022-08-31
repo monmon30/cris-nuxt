@@ -1,11 +1,10 @@
 <template>
   <v-card class="ma-2" :width="$vuetify.breakpoint.mdAndUp ? '300px' : '500px'">
-    <v-card-title> Sample Product name </v-card-title>
-    <v-card-subtitle> sample subtitle </v-card-subtitle>
+    <v-card-title> {{ product.name }} </v-card-title>
     <div>
-      <v-img
-        aspect-ratio="1"
-        src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+      <img
+        class="product-item-image"
+        :src="require(`~/assets/images/products/${mainImage.url}.jpg`)"
       />
     </div>
     <v-card-actions>
@@ -16,6 +15,25 @@
 
 <script>
 export default {
-  name: 'ProductItem'
+  name: 'ProductItem',
+  props: {
+    product: {
+      type: Object,
+      required: true
+    }
+  },
+  computed: {
+    mainImage() {
+      return this.product?.images.find(image => image.is_main === true)
+    }
+  }
 }
 </script>
+
+<style scoped>
+.product-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+</style>
