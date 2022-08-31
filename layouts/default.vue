@@ -3,7 +3,13 @@
     <v-app-bar :clipped-left="clipped" app>
       <v-app-bar-nav-icon class="d-flex d-sm-none" @click="drawer = !drawer" />
 
-      <div class="text-no-wrap">{{ $config.appName }}</div>
+      <NuxtLink
+        to="/"
+        class="text-no-wrap"
+        style="text-decoration: none; color: inherit"
+      >
+        {{ $config.appName }}
+      </NuxtLink>
       <v-spacer />
       <!-- THIS TABS WILL SHOW IF THE BREAKPOINT IS MD -->
       <v-tabs class="d-none d-sm-flex d-md-flex flex-row-reverse">

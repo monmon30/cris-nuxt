@@ -2,8 +2,8 @@
   <v-container>
     <v-row justify="center" align="center">
       <ProductItem
-        v-for="(product, i) in products"
-        :key="i"
+        v-for="product in products"
+        :key="product.id"
         :product="product"
       />
     </v-row>

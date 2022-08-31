@@ -7,9 +7,10 @@ export const state = () => ({
   },
   products: [
     {
+      id: 1,
       name: 'Bow Gold (Big)',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sint eligendi velit alias tempora, voluptatum, in animi placeat voluptate ex, quasi corrupti impedit distinctio quia numquam repellat laborum iure dolorem.',
+        'You will be enriched in every way so that you can be generous on every occasion, and through us your generosity will result in thanksgiving to God.',
       images: [
         { url: 'bow_gold_back', is_main: false },
         { url: 'bow_gold_bottom_left', is_main: false },
@@ -18,14 +19,39 @@ export const state = () => ({
       ]
     },
     {
-      name: 'Bow Gold (Small)',
+      id: 2,
+      name: 'Abstract Table Cross',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sint eligendi velit alias tempora, voluptatum, in animi placeat voluptate ex, quasi corrupti impedit distinctio quia numquam repellat laborum iure dolorem.',
+        'You will be enriched in every way so that you can be generous on every occasion, and through us your generosity will result in thanksgiving to God.',
       images: [
-        { url: 'bow_gold_back', is_main: false },
-        { url: 'bow_gold_bottom_left', is_main: false },
-        { url: 'bow_gold_front', is_main: true },
-        { url: 'bow_gold_top_right', is_main: false }
+        { url: 'atc_back', is_main: false },
+        { url: 'atc_front', is_main: false },
+        { url: 'atc_front2', is_main: true },
+        { url: 'atc_left_front', is_main: false }
+      ]
+    },
+    {
+      id: 3,
+      name: 'Abstract Table Cross',
+      description:
+        'You will be enriched in every way so that you can be generous on every occasion, and through us your generosity will result in thanksgiving to God.',
+      images: [
+        { url: 'atc_back', is_main: false },
+        { url: 'atc_front', is_main: false },
+        { url: 'atc_front2', is_main: true },
+        { url: 'atc_left_front', is_main: false }
+      ]
+    },
+    {
+      id: 4,
+      name: 'Abstract Table Cross',
+      description:
+        'You will be enriched in every way so that you can be generous on every occasion, and through us your generosity will result in thanksgiving to God.',
+      images: [
+        { url: 'atc_back', is_main: false },
+        { url: 'atc_front', is_main: false },
+        { url: 'atc_front2', is_main: true },
+        { url: 'atc_left_front', is_main: false }
       ]
     }
   ]

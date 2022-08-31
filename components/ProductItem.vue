@@ -1,5 +1,10 @@
 <template>
-  <v-card class="ma-2" :width="$vuetify.breakpoint.mdAndUp ? '300px' : '500px'">
+  <v-card
+    class="ma-2"
+    :width="$vuetify.breakpoint.mdAndUp ? '300px' : '500px'"
+    hover
+    :to="`/product/${product.id}`"
+  >
     <v-card-title> {{ product.name }} </v-card-title>
     <div>
       <img
