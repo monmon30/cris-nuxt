@@ -36,7 +36,7 @@ export const state = () => ({
       description:
         'You will be enriched in every way so that you can be generous on every occasion, and through us your generosity will result in thanksgiving to God.',
       images: [
-        { url: 'acryclic_top_ left', is_main: false },
+        { url: 'acryclic_top_left', is_main: false },
         { url: 'acryclic_top_right', is_main: false },
         { url: 'acryclic_front', is_main: true },
         { url: 'acryclic_back', is_main: false }

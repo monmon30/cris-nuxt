@@ -115,5 +115,6 @@ export default {
   },
   image: {
     domains: ['images.unsplash.com', 'tailwindui.com']
-  }
+  },
+  target: 'static'
 }
