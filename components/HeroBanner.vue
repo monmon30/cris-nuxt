@@ -11,10 +11,10 @@
       </v-card-title>
 
       <v-card-text class="text-h6 word-break">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta
-        corporis tempora eveniet quo error, nesciunt accusamus eligendi iusto
-        odit cumque veritatis magni voluptatem ducimus, itaque obcaecati esse
-        exercitationem laboriosam?
+        Customer satisfaction is our top priority, which is why we make every
+        effort to deliver prompt and accurate service, and provide products of
+        exceptional value and quality. We hope that our commitment to customer
+        service will make your shopping experience a pleasurable one.
       </v-card-text>
 
       <v-card-text>
@@ -23,7 +23,7 @@
     </v-card>
     <div>
       <v-img
-        src="https://images.unsplash.com/photo-1528357136257-0c25517acfea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        src="/images/banner/hero-banner.jpg"
         :max-height="$vuetify.breakpoint.smOnly ? '500px' : '1000px'"
         :max-width="$vuetify.breakpoint.smOnly ? '100vw' : '800px'"
         contain
